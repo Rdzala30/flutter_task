@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'Facts.dart';
 import 'Objectives.dart';
 
+
+
 class SearchPage extends StatelessWidget {
   // Define your list of options
   List<String> options = [
@@ -61,17 +63,12 @@ class SearchPage extends StatelessWidget {
                 },
               ),
             ),
-
             Expanded(
               child: Column(
                 children: [
                   Expanded(
                     child: MainTextPage(),
                   ),
-
-
-
-
                 ],
               ),
             ),

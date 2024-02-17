@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/Objectives.dart';
 
 class MainTextPage extends StatelessWidget {
   @override
@@ -12,6 +13,7 @@ class MainTextPage extends StatelessWidget {
             style: TextStyle(
               fontSize: 24.0, // Adjust the font size as needed
               fontWeight: FontWeight.bold,
+              color: Color.fromRGBO(10, 0, 77, 10.0),
             ),
           ),
         ),
@@ -97,6 +99,7 @@ class MainTextPage extends StatelessWidget {
                   },
                 ),
               ),
+
             ],
           ),
         ),

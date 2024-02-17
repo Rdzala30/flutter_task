@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'search.dart';
 import 'SideNavBar.dart'; // Import the SideNavBar file
+import 'Alerts.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -59,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
       case 1:
         return Text('Cloud Content');
       case 2:
-        return Text('Alerts Content');
+        return AlertPage();
       case 3:
         return SearchPage();
       case 4:
