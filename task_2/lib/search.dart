@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'Facts.dart';
-import 'Objectives.dart';
+import 'MainText.dart';
+
 
 
 
 class SearchPage extends StatelessWidget {
-  // Define your list of options
+
   List<String> options = [
     'Facts  +Add new',
     'Objective ',
@@ -38,7 +38,7 @@ class SearchPage extends StatelessWidget {
       body: Scrollbar(
         child: Row(
           children: [
-            // First Child (Vertical List - Option Menu)
+
             Container(
               width: screenWidth * 0.2,
               child: ListView.builder(
@@ -46,7 +46,7 @@ class SearchPage extends StatelessWidget {
                 itemCount: options.length,
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 45, // Set the height as needed
+                    height: 45,
                     margin: EdgeInsets.all(2.0),
                     color: Colors.grey[200],
                     child: Center(
@@ -57,21 +57,27 @@ class SearchPage extends StatelessWidget {
                           color: Colors.black,
                           fontSize: 18.0,
                         ),
+
                       ),
                     ),
                   );
+
                 },
               ),
             ),
+
+
             Expanded(
               child: Column(
                 children: [
                   Expanded(
                     child: MainTextPage(),
                   ),
+
                 ],
               ),
             ),
+
           ],
         ),
       ),

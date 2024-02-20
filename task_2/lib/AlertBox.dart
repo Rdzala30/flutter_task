@@ -40,7 +40,7 @@ class _alertBoxState extends State<alertBox> with SingleTickerProviderStateMixin
           children: [
             OnGoingMenu(),
             ContainerForOption2(),
-            //  Center(child: Text('Content for Option 2')),
+
           ],
         ),
       ),
@@ -66,9 +66,9 @@ class _ContainerForOption2State extends State<ContainerForOption2> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded( // Use Expanded widget to take the available space
+                Expanded(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end, // Align to the right
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       DropdownButton<String>(
                         value: _selectedOption,
@@ -90,7 +90,7 @@ class _ContainerForOption2State extends State<ContainerForOption2> {
                           );
                         }).toList(),
                         style: TextStyle(
-                          color: Colors.black, // Set the text color of the selected value
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -149,7 +149,7 @@ Widget buildItemList() {
     ItemData('UUTar Ram Devindra singh Humden & Air ', '10:30 AM', false),
     ItemData('M/s India Airways Pvt. Ltd & Ors vs PUs Manglam ', '1:45 PM', true),
     ItemData('S.Shree Daneshwari Traders vs Sanjay Jain and Another ', '1:45 PM', false),
-    // Add more items as needed
+
   ];
 
   return Column(
@@ -165,7 +165,7 @@ Widget buildItemList() {
               child: Checkbox(
                 value: item.isChecked,
                 onChanged: (value) {
-                  // Handle checkbox state change
+
                 },
               ),
             ),
@@ -218,7 +218,7 @@ Widget buildItemList2() {
     ItemData('Rangappa vs Shri Mohan ASP JMN Ai','2.42 PM',true),
     ItemData('Mr Singh vs Mukesh Kumar ', '11:47 AM', false),
     ItemData('Shri Ram Traders  vs Main Genertics Pvt. Ltd ', '11:47 AM', true),
-    // Add more items as needed
+
   ];
 
   return Column(
@@ -234,7 +234,7 @@ Widget buildItemList2() {
               child: Checkbox(
                 value: item.isChecked,
                 onChanged: (value) {
-                  // Handle checkbox state change
+
                 },
               ),
             ),

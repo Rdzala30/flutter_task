@@ -16,7 +16,7 @@ class SideNavBar extends StatelessWidget {
           buildTabButton(
             icon: Icons.cloud_circle_outlined,
             index: 1,
-            text: 'Cloud',
+            text: '',
           ),
           buildTabButton(
             icon: Icons.add_alert_outlined,
@@ -43,7 +43,7 @@ class SideNavBar extends StatelessWidget {
             index: 6,
             text: 'Logout',
           ),
-          // Add other IconButton widgets with similar structure
+
         ],
       ),
     );

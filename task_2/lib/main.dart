@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'search.dart';
-import 'SideNavBar.dart'; // Import the SideNavBar file
+import 'SideNavBar.dart';
 import 'Alerts.dart';
 
 
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(),
       body: Row(
         children: [
-          // Your side tab bar goes here
+
           SideNavBar(
             currentIndex: _currentIndex,
             onTabTapped: (index) {
@@ -41,14 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
           ),
-
-          // Your main content goes here
           Expanded(
             child: Container(
               color: Colors.white,
               child: Center(
                 child: _buildMainContent(),
+
               ),
+
             ),
           ),
         ],
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _buildMainContent() {
     switch (_currentIndex) {
       case 1:
-        return Text('Cloud Content');
+        return Text('Main Content');
       case 2:
         return AlertPage();
       case 3:
